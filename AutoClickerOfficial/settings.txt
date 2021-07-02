@@ -1,0 +1,34 @@
+# ===============================================INSTRUCTIONS============================================================
+# -Modify the settings.txt file to have the correct "version" of nova
+# -Modify the settings.txt file to have the correct "psu_name" if a power supply is needed.
+# -Modify the "launch_rtcontrol.bat" script to have the correct rtcontrol commands.
+# -Launch Nova application
+# -Launch PSCS application (for the power supply if needed)
+# -Launch the AutoClickerOfficial application as administrator.
+# -Select option required (RFID Proximity test or RFID Reading Test)
+# -Select number of runs required
+# -Maximize Nova and let the tests complete
+# -A folder will be created in the same location as the bot folder containing all relevant logs
+# ~~~~~~~~~~~~~~~~~~~~~ Francais ~~~~~~~~~~~~~~~~~~~~~~~
+# -Modifier le fichier settings.txt pour avoir la bonne "version" de nova.
+# -Modifiez le fichier settings.txt pour avoir la bonne "psu_name" si une reboot est nécessaire.
+# -Modifiez le script "launch_rtcontrol.bat" pour avoir les commandes correctes de rtcontrol.
+# -Lancez l'application Nova
+# -Lancez l'application PSCS (pour reboot si nécessaire).
+# -Lancez l'application AutoClickerOfficial en tant qu'administrateur.
+# -Sélectionnez l'option requise (test de proximité RFID ou test de lecture RFID - Reboot/No Reboot).
+# -Sélectionnez le nombre de tests requis
+# -Maximisez Nova et laissez les tests se terminer.
+# -Un dossier contenant tous les logs pertinents sera créé au même endroit que le dossier du robot.
+# =======================================================================================================================
+version v3.2.4-1
+proximity_test_duration 905
+reading_test_duration 5
+preperation_time 8
+psu_name Rating: 
+qnx_system false
+power_supply_down_time 10
+power_supply_up_time 20
+batch_commands launch_rtcontrol.bat
+reboot_frequency 1
+<endfile>
